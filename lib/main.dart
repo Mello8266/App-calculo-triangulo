@@ -1,29 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; 
+import 'package:flutter_application_1/widget/myapp.dart';
 
 void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Aplicativo Olá mundo'),
-        ),
-        body: Center(
-          child: Text(
-            "Olá mundo",
-            style: TextStyle(
-              fontSize: 40,
-              color: Colors.black,
-            ),
-          ),
-        ),
-      ),
-    );
-  }
+  runApp(const MyApp());
 }
