@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/widget/home_controller.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}):super(key: key)
+  const HomePage({super.key})
 
   @override
   Widget build(BuildContext context) {
-    var controller = HomeController.of(context);
-
+    
     return Scaffold(
       appBar: AppBar(
         title: Text('Home'),
@@ -15,7 +13,7 @@ class HomePage extends StatelessWidget {
 
       body: Center(
         child: Text(
-          'Flutter é legal ${controller.value}',
+          'Flutter é legal',
           style: TextStyle(
             fontSize: 40,
             color: Colors.black,
@@ -26,7 +24,7 @@ class HomePage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () {
-          controller.increment();
+          print("Funcionou");
         },
       ),
     );
