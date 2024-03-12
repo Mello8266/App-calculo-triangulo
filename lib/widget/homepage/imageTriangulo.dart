@@ -1,3 +1,5 @@
+// Widget da imagem, instanciado na homePage.dart
+
 import 'package:flutter/material.dart';
 
 class ImageTriangulo extends StatelessWidget {
@@ -7,7 +9,7 @@ class ImageTriangulo extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(left: 25),
       alignment: Alignment.topRight,
-      width: 160,
+      width: 130,
       height: 550,
       child: Image(image: AssetImage('image/triangulo.png')),
     );

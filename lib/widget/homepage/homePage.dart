@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/widget/coluna.dart';
+import 'package:flutter_application_1/widget/homepage/colunaVertical.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
       ),
 
       body: SafeArea(
-        child: Coluna(
+        child: ColunaVertical(
         ),
       ),
     );
