@@ -12,7 +12,7 @@ class TextLado extends StatelessWidget {
       margin: EdgeInsets.only(bottom: 15),
       child: SizedBox(
         width: 200,
-        height: 60,
+        // height: 60,
         child: TextField(
           decoration: InputDecoration(
               labelText: text,
