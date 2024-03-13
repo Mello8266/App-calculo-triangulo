@@ -13,7 +13,7 @@ class TextLado extends StatelessWidget {
       child: SizedBox(
         width: 200,
         // height: 60,
-        child: TextField(
+        child: TextFormField(
           decoration: InputDecoration(
               labelText: text,
               border:

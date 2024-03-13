@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/widget/botao.dart';
 import 'package:flutter_application_1/widget/container1_coluna.dart';
 
 class HomePage extends StatelessWidget {
@@ -35,8 +36,8 @@ class HomePage extends StatelessWidget {
               height: 200,
               width: 200,
               child: Row(children: [
-                TextButton(onPressed: (){}, child: Text("=")),
-                TextButton(onPressed: () {}, child: Text('Limpar'))
+                Botao('='),
+                Botao('Limpar'),
               ],),
             )
           ],
