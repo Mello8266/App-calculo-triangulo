@@ -2,10 +2,12 @@
 
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/widget/homepage/imageTriangulo.dart';
-import 'package:flutter_application_1/widget/homepage/textLado.dart';
+import 'package:flutter_application_1/widget/homepage/image_triangulo.dart';
+import 'package:flutter_application_1/widget/homepage/text_lado.dart';
 
 class ColunaLinha extends StatelessWidget {
+  const ColunaLinha({super.key});
+
   // build
   @override
   Widget build(BuildContext context) {
@@ -15,7 +17,7 @@ class ColunaLinha extends StatelessWidget {
           TextLado("base"),
           TextLado("altura"),
         ]),
-        ImageTriangulo(),
+        const ImageTriangulo(),
       ],
     );
   }

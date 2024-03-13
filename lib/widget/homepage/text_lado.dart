@@ -12,9 +12,9 @@ class TextLado extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(bottom: 15),
+      // margin: const EdgeInsets.only(bottom: 15),
       child: SizedBox(
-        height: 200,
+        // height: 200,
         child: TextField(
           decoration: InputDecoration(
               labelText: text,
