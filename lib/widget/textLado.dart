@@ -11,14 +11,20 @@ class TextLado extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(bottom: 15),
       child: SizedBox(
-        width: 200,
+        width: 140,
         // height: 60,
         child: TextFormField(
+          
           decoration: InputDecoration(
               labelText: text,
+              labelStyle: const TextStyle(
+                fontFamily: 'Inter',
+                fontSize: 20
+              ),
               border:
                   OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(20))),
+                    borderRadius: BorderRadius.circular(20)),
+                    ),
         ),
       ),
     );

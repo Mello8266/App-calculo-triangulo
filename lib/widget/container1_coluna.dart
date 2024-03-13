@@ -6,13 +6,14 @@ class ColunaHorizontal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //margin: EdgeInsets.only(top: 50, left: 5),
+      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Column(
             children: <Widget>[
-              TextLado("Base"),
-              TextLado("Altura"),
+              TextLado("Base:"),
+              TextLado("Altura:"),
           ]),
           ImageTriangulo(),
         ],
