@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/widget/container1_coluna.dart';
-import 'package:flutter_application_1/widget/container2.dart';
-import 'package:flutter_application_1/widget/container3.dart';
+import 'package:flutter_application_1/widget/container1/container1_coluna.dart';
+import 'package:flutter_application_1/widget/container2/container2.dart';
+import 'package:flutter_application_1/widget/container3/container3.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

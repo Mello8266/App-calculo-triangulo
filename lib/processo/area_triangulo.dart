@@ -1,15 +1,16 @@
-class Triangulo{
+class AreaTriangulo{
   // Atributos
   double base;
   double altura;
 
   // Método
-  double calcArea(base, altura){
-    return base * altura / 2;
+  String calcArea(base, altura){
+    var area = base * altura / 2;
+    return area.toStringAsFixed(2);
   }
 
-  // Construtos
-  Triangulo(this.base, this.altura);
+  // Construtor
+  AreaTriangulo(this.base, this.altura);
 
   // Setters
   void setBase(base){

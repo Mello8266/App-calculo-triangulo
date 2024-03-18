@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/widget/image_triangulo.dart';
-import 'package:flutter_application_1/widget/textLado.dart';
+import 'package:flutter_application_1/widget/container1/image_triangulo.dart';
+import 'package:flutter_application_1/widget/container1/textLado.dart';
 
 class ColunaHorizontal extends StatelessWidget {
   @override

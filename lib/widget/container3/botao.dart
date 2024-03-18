@@ -1,18 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/processo/area_triangulo.dart';
+import 'package:flutter_application_1/widget/container1/textLado.dart';
 
-class ContainerBotao extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: [Botao('Calcular'), Botao('Limpar')],
-    );
-  }
-}
 
+// ignore: must_be_immutable
 class Botao extends StatelessWidget {
-  String txt;
-
+  final String txt;
   Botao(this.txt);
 
   @override
@@ -24,16 +17,17 @@ class Botao extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
             color: const Color.fromRGBO(56, 0, 82, 100)),
         child: TextButton(
-          onPressed: () {},
+          onPressed: () {
+            double area = getTextFieldValor();
+            AreaTriangulo t = AreaTriangulo(0, 0);
+          },
           child: Text(
             txt,
             style: const TextStyle(
-              fontFamily: "Inter",
-              fontSize: 20,
-              fontWeight: FontWeight.w800
-            ),
+                fontFamily: "Inter", 
+                fontSize: 20, 
+                fontWeight: FontWeight.w900),
           ),
-        )
-      );
+        ));
   }
 }

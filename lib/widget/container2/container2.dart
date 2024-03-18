@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/widget/container2/estilo_texto.dart';
 
 class Container2 extends StatelessWidget {
   const Container2({super.key});
@@ -21,27 +22,5 @@ class Container2 extends StatelessWidget {
         )
       ],
     );
-  }
-}
-
-
-// ignore: must_be_immutable
-class EstiloTexto extends StatelessWidget{
-  String txt;
-  double tamFont;
-  int r, g, b;
-
-  EstiloTexto(this.txt, this.tamFont, this.r, this.g, this.b, {super.key});
-
-  @override
-  Widget build(BuildContext context){
-    return Text(
-      txt, 
-      textAlign: TextAlign.center,
-      style: TextStyle(
-        fontSize: tamFont,
-        fontFamily: 'Inter',
-        color: Color.fromRGBO(r, g, b, 100)
-    ),);
   }
 }
