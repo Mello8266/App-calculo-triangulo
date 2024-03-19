@@ -12,8 +12,8 @@ class ColunaHorizontal extends StatelessWidget {
         children: <Widget>[
           Column(
             children: <Widget>[
-              TextLado("Base:"),
-              TextLado("Altura:"),
+              TextLado(1, "Base:"),
+              TextLado(2, "2"),
           ]),
           ImageTriangulo(),
         ],
