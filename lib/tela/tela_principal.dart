@@ -3,6 +3,7 @@ import 'package:flutter_application_1/componente/coluna.dart';
 import 'package:flutter_application_1/componente/estilizacao.dart';
 import 'package:flutter_application_1/componente/meu_container.dart';
 import 'package:flutter_application_1/componente/texto_lateral.dart';
+import 'package:flutter_application_1/tela/tela_resultado.dart';
 
 class TelaPrincipal extends StatefulWidget {
   const TelaPrincipal({super.key});
@@ -63,9 +64,24 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
             ),
 
             // * Container final
-            const Expanded(
-              child: MeuContainer(cor: Colors.red),
-            )
+            MeuContainer(
+              cor: Colors.white,
+              filho: Container(
+                width: 115,
+                height: 100,
+                padding: const EdgeInsets.all(20),
+                decoration: botaoEstilo,
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (_) => const TelaResultado(),
+                      ),
+                    );
+                  },
+                  child: textContainer3,
+                ),
+              ),
+            ),
           ],
         ),
       ),

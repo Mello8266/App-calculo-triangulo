@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/componente/estilizacao.dart';
 
-class MeuContainer extends StatelessWidget {
+class MeuContainer extends StatefulWidget {
   final Color cor;
   final Widget? filho;
 
@@ -8,11 +9,16 @@ class MeuContainer extends StatelessWidget {
   const MeuContainer({required this.cor, this.filho});
 
   @override
+  State<MeuContainer> createState() => _MeuContainerState();
+}
+
+class _MeuContainerState extends State<MeuContainer> {
+  @override
   Widget build(BuildContext context) {
     return Container(
       height: 220,
-      color: cor,
-      child: filho,
+      color: widget.cor,
+      child: widget.filho,
     );
   }
 }
