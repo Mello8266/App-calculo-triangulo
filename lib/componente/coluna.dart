@@ -13,7 +13,6 @@ class Coluna extends StatelessWidget {
     return Column(
       children: [
         Container(
-          margin: const EdgeInsets.all(20),
           child: colunaTextTitulo
         ),
         Container(
